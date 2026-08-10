@@ -20,7 +20,7 @@ export const portfolioData = {
       github: "https://github.com/ujwal4262",
       linkedin: "https://linkedin.com",
       email: "mailto:ujwalyadav.dev@gmail.com",
-      resume: "#"
+      resume: "/resume.pdf"
     },
     heroCodeVisual: {
       filename: "developer.js",

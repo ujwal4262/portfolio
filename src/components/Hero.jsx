@@ -96,6 +96,8 @@ export default function Hero() {
 
               <a
                 href={portfolioData.personal.social.resume}
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center space-x-2 px-6 py-3.5 rounded-xl glass-panel text-slate-200 hover:text-white hover:border-slate-600 text-sm font-medium transition-all duration-200"
               >
                 <Download size={16} />
