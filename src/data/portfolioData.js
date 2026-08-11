@@ -97,9 +97,11 @@ export const portfolioData = {
       { name: "Git", icon: "GitBranch" },
       { name: "GitHub", icon: "Github" },
       { name: "Android Studio", icon: "Smartphone" },
-      { name: "VS Code", icon: "Code" }
+      { name: "VS Code", icon: "Code" },
+      { name: "Cisco Packet Tracer", icon: "Network" }
     ],
     concepts: [
+      { name: "Computer Networks & Protocols" },
       { name: "Data Structures & Algorithms" },
       { name: "Object-Oriented Programming" },
       { name: "Responsive Design" },
@@ -343,6 +345,14 @@ export const portfolioData = {
       date: "2025",
       credentialUrl: "#",
       description: "Comprehensive training covering network security fundamentals, threat analysis, data privacy principles, and system defense strategies."
+    },
+    {
+      id: "cert-2",
+      name: "Cisco Packet Tracer",
+      organization: "Cisco Networking Academy",
+      date: "2025",
+      credentialUrl: "#",
+      description: "Hands-on certification in network topology simulation, configuring routers and switches, IPv4/IPv6 addressing, network protocols, and network troubleshooting."
     }
   ],
 

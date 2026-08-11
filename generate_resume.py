@@ -107,8 +107,8 @@ def create_resume(output_filename):
     
     # Summary
     story.append(Paragraph("PROFESSIONAL SUMMARY", section_heading))
-    story.append(Paragraph("Computer Science & Engineering graduate passionate about building modern web and mobile applications with clean architecture, intuitive user interfaces, and scalable backend systems. Proficient in React.js, Node.js, Express.js, Python Flask, MongoDB, MySQL, and Figma UI/UX design.", body_style))
-    story.append(Spacer(1, 8))
+    story.append(Paragraph("Computer Science & Engineering graduate passionate about building modern web and mobile applications with clean architecture, intuitive user interfaces, scalable backend systems, and solid computer networking principles. Proficient in React.js, Node.js, Express.js, Python Flask, Computer Networks, Cisco Packet Tracer, MongoDB, MySQL, and Figma UI/UX design.", body_style))
+    story.append(Spacer(1, 6))
     
     # Education
     story.append(Paragraph("EDUCATION", section_heading))
@@ -121,8 +121,8 @@ def create_resume(output_filename):
     t_edu = Table(edu_data, colWidths=[400, 140])
     t_edu.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('LEFTPADDING', (0,0), (-1,-1), 0), ('RIGHTPADDING', (0,0), (-1,-1), 0)]))
     story.append(t_edu)
-    story.append(Paragraph("<b>Relevant Coursework:</b> Data Structures & Algorithms, Database Management Systems, Computer Networks, Software Engineering, Web Development, Cybersecurity Fundamentals.", ParagraphStyle('Sub', parent=body_style, fontSize=8.5, leading=11)))
-    story.append(Spacer(1, 8))
+    story.append(Paragraph("<b>Relevant Coursework:</b> Computer Networks & Protocols, Data Structures & Algorithms, DBMS, Cybersecurity Fundamentals, Software Engineering, Web Development.", ParagraphStyle('Sub', parent=body_style, fontSize=8.5, leading=11)))
+    story.append(Spacer(1, 6))
     
     # Technical Skills
     story.append(Paragraph("TECHNICAL SKILLS", section_heading))
@@ -130,10 +130,11 @@ def create_resume(output_filename):
         "<b>Programming Languages:</b> Java, JavaScript (ES6+), Python, Kotlin, HTML5, CSS3<br/>"
         "<b>Frontend Development:</b> React.js, React Native, Tailwind CSS, Figma UI/UX Prototyping<br/>"
         "<b>Backend & Databases:</b> Node.js, Express.js, REST APIs, JWT, Bcrypt, MongoDB, MySQL, Firebase, SQLite<br/>"
+        "<b>Networking & Security:</b> Computer Networks, Cisco Packet Tracer, TCP/IP, Router/Switch Config, IP Subnetting<br/>"
         "<b>Tools & Concepts:</b> Git, GitHub, VS Code, Android Studio, Data Structures & Algorithms, OOP, Agile"
     )
     story.append(Paragraph(skills_text, body_style))
-    story.append(Spacer(1, 8))
+    story.append(Spacer(1, 5))
     
     # Projects
     story.append(Paragraph("FEATURED PROJECTS", section_heading))
@@ -147,7 +148,7 @@ def create_resume(output_filename):
             "Developed a modern apparel e-commerce web platform with real-time product category filtering and dynamic search.",
             "Implemented persistent cart management and smooth checkout workflows optimized for mobile and desktop screens."
         ]),
-        ("AI Career & Mental Health Assistant", "React.js, Node.js, Express.js, Python Flask, Machine Learning", [
+        ("AI Career & Mental Health Assistant", "React.js, Node.js, Express.js, Python Flask, ML", [
             "Architected a multi-service platform connecting a React client, Express API gateway, and Python Flask ML microservice.",
             "Integrated natural language processing models to deliver personalized career roadmaps and student support guidance."
         ]),
@@ -155,7 +156,7 @@ def create_resume(output_filename):
             "Trained and evaluated machine learning classification models (Random Forest) on clinical patient diagnostic datasets.",
             "Deployed a lightweight Flask web API endpoint for fast real-time cardiovascular disease risk assessments."
         ]),
-        ("Figma UI/UX & Product Design System", "Figma, UI/UX Design, Component Libraries, Wireframing", [
+        ("Figma UI/UX & Product Design System", "Figma, UI/UX Design, Component Libraries", [
             "Created a comprehensive Figma design system featuring atomic UI components, responsive auto-layouts, and design tokens.",
             "Mapped user interaction flows and clickable prototypes to streamline client-side developer handoff."
         ])
@@ -171,17 +172,20 @@ def create_resume(output_filename):
         story.append(t_proj)
         for pt in points:
             story.append(Paragraph(f"&bull; {pt}", bullet_style))
-        story.append(Spacer(1, 4))
+        story.append(Spacer(1, 2.5))
         
-    story.append(Spacer(1, 4))
+    story.append(Spacer(1, 2))
     
     # Certifications
     story.append(Paragraph("CERTIFICATIONS", section_heading))
     story.append(Paragraph("<b>Introduction to Cybersecurity</b> &ndash; Cisco Networking Academy (2025)", body_style))
     story.append(Paragraph("&bull; Training covering network defense fundamentals, risk management, data privacy, and threat analysis.", bullet_style))
+    story.append(Spacer(1, 2))
+    story.append(Paragraph("<b>Cisco Packet Tracer / Networking Basics</b> &ndash; Cisco Networking Academy (2025)", body_style))
+    story.append(Paragraph("&bull; Hands-on certification in network simulation, router/switch configuration, IP subnetting, and protocol troubleshooting.", bullet_style))
     
     doc.build(story)
-    print(f"Resume generated successfully at {output_filename}")
+    print(f"Resume generated successfully at {output_filename} ({doc.page} page(s))")
 
 if __name__ == "__main__":
     create_resume("d:/portfolio/src/assets/resume.pdf")
