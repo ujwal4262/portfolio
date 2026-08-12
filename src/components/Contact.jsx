@@ -115,7 +115,7 @@ export default function Contact() {
                   <div>
                     <span className="text-[11px] font-mono text-slate-400 uppercase tracking-wider block">Email Me</span>
                     <span className="text-sm font-semibold text-slate-100 group-hover:text-indigo-400 transition-colors">
-                      ujwalyadav.dev@gmail.com
+                      callmeuzwal@gmail.com
                     </span>
                   </div>
                 </a>

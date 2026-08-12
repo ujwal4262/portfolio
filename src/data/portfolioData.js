@@ -16,10 +16,12 @@ export const portfolioData = {
       "Software Engineer",
       "Problem Solver"
     ],
+    location: "Rupani-01, Saptari, Nepal",
     social: {
+      phone: "+977 9811777551",
       github: "https://github.com/ujwal4262",
       linkedin: "https://linkedin.com",
-      email: "mailto:ujwalyadav.dev@gmail.com",
+      email: "mailto:callmeuzwal@gmail.com",
       resume: "/resume.pdf"
     },
     heroCodeVisual: {

@@ -195,7 +195,7 @@ export default function Footer() {
                 className="flex items-center space-x-2 text-slate-400 hover:text-white transition-colors"
               >
                 <Mail size={15} />
-                <span>ujwalyadav.dev@gmail.com</span>
+                <span>callmeuzwal@gmail.com</span>
               </a>
 
               <a

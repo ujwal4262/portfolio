@@ -8,5 +8,6 @@ export default function AboutPage() {
       <About />
       <Philosophy />
     </div>
+
   );
 }

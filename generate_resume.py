@@ -101,7 +101,7 @@ def create_resume(output_filename):
     story.append(Spacer(1, 2))
     story.append(Paragraph("COMPUTER SCIENCE GRADUATE & FULL-STACK DEVELOPER", title_style))
     story.append(Spacer(1, 4))
-    story.append(Paragraph("Bhubaneswar, Odisha, India &bull; ujwalyadav.dev@gmail.com &bull; github.com/ujwal4262 &bull; linkedin.com", contact_style))
+    story.append(Paragraph("+977 9811777551 &bull; callmeuzwal@gmail.com &bull; github.com/ujwal4262 &bull; Rupani-01, Saptari, Nepal", contact_style))
     story.append(Spacer(1, 6))
     story.append(HRFlowable(width="100%", thickness=1, color=ACCENT, spaceBefore=2, spaceAfter=8))
     
