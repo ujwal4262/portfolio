@@ -8,8 +8,9 @@ export const portfolioData = {
     supportingText:
       "I build modern web and mobile applications with clean architecture, intuitive interfaces, and scalable backend systems.",
     aboutIntro:
-      "I’m a Computer Science & Engineering graduate passionate about building software that solves real-world problems. My interests span full-stack web development, mobile applications, backend systems, and modern software architecture.",
+      "I’m a Computer Science & Engineering graduate currently working as a Level 2 Support Engineer at WebSurfer Nepal Communication System in Kathmandu. My expertise combines full-stack web and mobile development with hands-on network troubleshooting and infrastructure reliability.",
     roles: [
+      "Level 2 Support Engineer",
       "Full-Stack Developer",
       "Web Developer",
       "App Developer",
@@ -100,7 +101,8 @@ export const portfolioData = {
       { name: "GitHub", icon: "Github" },
       { name: "Android Studio", icon: "Smartphone" },
       { name: "VS Code", icon: "Code" },
-      { name: "Cisco Packet Tracer", icon: "Network" }
+      { name: "Cisco Packet Tracer", icon: "Network" },
+      { name: "Wireshark (Basic)", icon: "ShieldCheck" }
     ],
     concepts: [
       { name: "Computer Networks & Protocols" },
@@ -280,6 +282,25 @@ export const portfolioData = {
   ],
 
   experience: [
+    {
+      id: "exp-websurfer",
+      role: "Level 2 Support Engineer",
+      company: "WebSurfer Nepal Communication System Pvt. Ltd.",
+      companyUrl: "https://www.websurfer.com.np",
+      location: "Dhumbarahi Height, Kathmandu, Nepal",
+      locationMapUrl: "https://maps.google.com/?q=Websurfer+Nepal+Head+Office+Dhumbarahi+Height+Kathmandu",
+      type: "Full-Time",
+      period: "2025 – Present",
+      isCurrent: true,
+      description:
+        "Providing Level 2 network support and infrastructure troubleshooting at WebSurfer Nepal, ensuring high availability, rapid incident resolution, and reliable broadband connectivity for enterprise and residential clients.",
+      highlights: [
+        "Troubleshooting and resolving escalated GPON, FTTH, routing, DNS, DHCP, and PPPoE connectivity issues.",
+        "Monitoring network switches, OLTs, and CPE/ONT routers to diagnose packet drop, latency, and throughput degradation.",
+        "Coordinating with Level 3 network engineers and field transmission teams to resolve link outages and physical fiber faults.",
+        "Performing root cause analysis (RCA) and maintaining ticketing workflows to improve first-contact resolution rates."
+      ]
+    },
     {
       id: "exp-1",
       role: "Full-Stack Application Development",

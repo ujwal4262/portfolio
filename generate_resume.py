@@ -107,7 +107,7 @@ def create_resume(output_filename):
     
     # Summary
     story.append(Paragraph("PROFESSIONAL SUMMARY", section_heading))
-    story.append(Paragraph("Computer Science & Engineering graduate passionate about building modern web and mobile applications with clean architecture, intuitive user interfaces, scalable backend systems, and solid computer networking principles. Proficient in React.js, Node.js, Express.js, Python Flask, Computer Networks, Cisco Packet Tracer, MongoDB, MySQL, and Figma UI/UX design.", body_style))
+    story.append(Paragraph("Computer Science & Engineering graduate passionate about building modern web and mobile applications with clean architecture, intuitive user interfaces, scalable backend systems, and solid computer networking principles. Proficient in React.js, Node.js, Express.js, Python Flask, Computer Networks, Cisco Packet Tracer, Wireshark, MongoDB, MySQL, and Figma UI/UX design.", body_style))
     story.append(Spacer(1, 6))
     
     # Education
@@ -127,14 +127,26 @@ def create_resume(output_filename):
     # Technical Skills
     story.append(Paragraph("TECHNICAL SKILLS", section_heading))
     skills_text = (
-        "<b>Programming Languages:</b> Java, JavaScript (ES6+), Python, Kotlin, HTML5, CSS3<br/>"
-        "<b>Frontend Development:</b> React.js, React Native, Tailwind CSS, Figma UI/UX Prototyping<br/>"
-        "<b>Backend & Databases:</b> Node.js, Express.js, REST APIs, JWT, Bcrypt, MongoDB, MySQL, Firebase, SQLite<br/>"
-        "<b>Networking & Security:</b> Computer Networks, Cisco Packet Tracer, TCP/IP, Router/Switch Config, IP Subnetting<br/>"
-        "<b>Tools & Concepts:</b> Git, GitHub, VS Code, Android Studio, Data Structures & Algorithms, OOP, Agile"
+        "<b>Programming & Web:</b> Java, JavaScript (ES6+), Python, Kotlin, React.js, React Native, Node.js, Express.js, REST APIs<br/>"
+        "<b>Networking & Infrastructure:</b> GPON, FTTH, TCP/IP, DNS, DHCP, PPPoE, Cisco Packet Tracer, Wireshark, Router/Switch Config<br/>"
+        "<b>Databases & Tools:</b> MongoDB, MySQL, Firebase, Git, GitHub, VS Code, Linux/Windows Systems, Figma UI/UX"
     )
     story.append(Paragraph(skills_text, body_style))
-    story.append(Spacer(1, 5))
+    story.append(Spacer(1, 4))
+
+    # Experience
+    story.append(Paragraph("WORK EXPERIENCE", section_heading))
+    exp_head = [
+        Paragraph("<b>Level 2 Support Engineer (L2 Technical Support)</b><br/>WebSurfer Nepal Communication System Pvt. Ltd. &bull; Kathmandu, Nepal", bold_body),
+        Paragraph("<font color='#475569'><b>2025 &ndash; Present</b></font>", ParagraphStyle('R_exp', parent=body_style, alignment=2, fontSize=8.5))
+    ]
+    t_exp = Table([exp_head], colWidths=[420, 120])
+    t_exp.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('LEFTPADDING', (0,0), (-1,-1), 0), ('RIGHTPADDING', (0,0), (-1,-1), 0)]))
+    story.append(t_exp)
+    story.append(Paragraph("&bull; Providing Level 2 technical troubleshooting for enterprise & residential broadband, GPON/FTTH, and routing issues.", bullet_style))
+    story.append(Paragraph("&bull; Monitoring core switches, OLTs, and CPE/ONT routers for latency degradation, packet drops, and link stability.", bullet_style))
+    story.append(Paragraph("&bull; Collaborating with L3 network engineers and field transmission teams to resolve link outages and fiber faults.", bullet_style))
+    story.append(Spacer(1, 4))
     
     # Projects
     story.append(Paragraph("FEATURED PROJECTS", section_heading))
@@ -143,10 +155,6 @@ def create_resume(output_filename):
         ("Budget Tracking Application", "React.js, Node.js, Express.js, MongoDB", [
             "Built a full-stack personal finance web application featuring secure JWT user authentication and expense categorization.",
             "Designed interactive data visualization charts for monthly spending trends and automated budget threshold warnings."
-        ]),
-        ("Clothes Shopping Application", "React.js, Node.js, Express.js, MongoDB", [
-            "Developed a modern apparel e-commerce web platform with real-time product category filtering and dynamic search.",
-            "Implemented persistent cart management and smooth checkout workflows optimized for mobile and desktop screens."
         ]),
         ("AI Career & Mental Health Assistant", "React.js, Node.js, Express.js, Python Flask, ML", [
             "Architected a multi-service platform connecting a React client, Express API gateway, and Python Flask ML microservice.",

@@ -1,16 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Code2, Sparkles, Check } from 'lucide-react';
+import { GraduationCap, Code2, Sparkles, Check, Briefcase, MapPin } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 export default function About() {
   const highlightPoints = [
+    'Level 2 Network & Tech Support',
     'Full-stack web development',
     'Web & mobile applications',
     'Backend systems & REST APIs',
-    'Relational & NoSQL databases',
-    'Algorithmic problem solving',
-    'Modern software architecture'
+    'Network troubleshooting & routing',
+    'Relational & NoSQL databases'
   ];
 
   return (
@@ -39,7 +39,7 @@ export default function About() {
             className="lg:col-span-7 space-y-6"
           >
             <h3 className="text-2xl font-bold text-slate-100 tracking-tight">
-              Passionate about creating modern, robust software systems.
+              Passionate about creating modern, robust software & network systems.
             </h3>
 
             <p className="text-slate-300 leading-relaxed text-base sm:text-lg">
@@ -47,7 +47,7 @@ export default function About() {
             </p>
 
             <p className="text-slate-400 leading-relaxed text-sm sm:text-base">
-              With a strong grounding in Computer Science fundamentals, I focus on transforming complex ideas into clean, efficient code. I enjoy designing intuitive interfaces on the client side while building robust, reliable server architectures and database schemas.
+              With a strong grounding in Computer Science fundamentals and practical experience in ISP network operations, I focus on transforming complex ideas into clean, efficient code. I enjoy designing intuitive client-side interfaces while building robust server architectures, database schemas, and dependable network communications.
             </p>
 
             {/* Core Domain Tags Grid */}
@@ -66,52 +66,75 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* 3 Summary Cards */}
+          {/* Summary Cards */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="lg:col-span-5 space-y-4"
+            className="lg:col-span-5 space-y-3.5"
           >
-            <div className="glass-panel p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/30 transition-colors group">
+            <div className="glass-panel p-5 rounded-2xl border border-emerald-500/30 hover:border-emerald-500/50 transition-colors group bg-gradient-to-r from-emerald-500/5 to-transparent">
               <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-xl bg-indigo-500/10 text-indigo-400 group-hover:bg-indigo-500/20 transition-colors shrink-0">
-                  <GraduationCap size={24} />
+                <div className="p-3 rounded-xl bg-emerald-500/10 text-emerald-400 group-hover:bg-emerald-500/20 transition-colors shrink-0">
+                  <Briefcase size={22} />
                 </div>
                 <div>
-                  <span className="text-xs font-mono text-indigo-400 uppercase tracking-wider">Degree</span>
-                  <h4 className="text-lg font-bold text-slate-100 mt-0.5">Education</h4>
-                  <p className="text-sm font-semibold text-slate-300 mt-1">Computer Science & Engineering</p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-[11px] font-mono text-emerald-400 uppercase tracking-wider">Current Role</span>
+                    <span className="inline-flex items-center gap-1 text-[10px] font-mono text-emerald-400 px-1.5 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                      Active
+                    </span>
+                  </div>
+                  <h4 className="text-base font-bold text-slate-100 mt-0.5">Level 2 Support Engineer</h4>
+                  <p className="text-xs font-semibold text-slate-300 mt-1">WebSurfer Nepal Communication System</p>
+                  <div className="flex items-center space-x-1 text-xs text-slate-400 mt-1">
+                    <MapPin size={12} className="text-rose-400" />
+                    <span>Dhumbarahi Height, Kathmandu, Nepal</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-indigo-500/30 transition-colors group">
+              <div className="flex items-start space-x-4">
+                <div className="p-3 rounded-xl bg-indigo-500/10 text-indigo-400 group-hover:bg-indigo-500/20 transition-colors shrink-0">
+                  <GraduationCap size={22} />
+                </div>
+                <div>
+                  <span className="text-[11px] font-mono text-indigo-400 uppercase tracking-wider">Degree</span>
+                  <h4 className="text-base font-bold text-slate-100 mt-0.5">Education</h4>
+                  <p className="text-xs font-semibold text-slate-300 mt-1">Computer Science & Engineering</p>
                   <p className="text-xs text-slate-400 mt-1">KIIT University (2022 - 2026)</p>
                 </div>
               </div>
             </div>
 
-            <div className="glass-panel p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/30 transition-colors group">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-indigo-500/30 transition-colors group">
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-xl bg-purple-500/10 text-purple-400 group-hover:bg-purple-500/20 transition-colors shrink-0">
-                  <Code2 size={24} />
+                  <Code2 size={22} />
                 </div>
                 <div>
-                  <span className="text-xs font-mono text-purple-400 uppercase tracking-wider">Specialization</span>
-                  <h4 className="text-lg font-bold text-slate-100 mt-0.5">Focus</h4>
-                  <p className="text-sm font-semibold text-slate-300 mt-1">Full-Stack Development</p>
+                  <span className="text-[11px] font-mono text-purple-400 uppercase tracking-wider">Specialization</span>
+                  <h4 className="text-base font-bold text-slate-100 mt-0.5">Focus</h4>
+                  <p className="text-xs font-semibold text-slate-300 mt-1">Full-Stack Development</p>
                   <p className="text-xs text-slate-400 mt-1">React, Node.js, REST APIs, & Cloud Databases</p>
                 </div>
               </div>
             </div>
 
-            <div className="glass-panel p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/30 transition-colors group">
+            <div className="glass-panel p-5 rounded-2xl border border-slate-800 hover:border-indigo-500/30 transition-colors group">
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-xl bg-pink-500/10 text-pink-400 group-hover:bg-pink-500/20 transition-colors shrink-0">
-                  <Sparkles size={24} />
+                  <Sparkles size={22} />
                 </div>
                 <div>
-                  <span className="text-xs font-mono text-pink-400 uppercase tracking-wider">Domains</span>
-                  <h4 className="text-lg font-bold text-slate-100 mt-0.5">Interests</h4>
-                  <p className="text-sm font-semibold text-slate-300 mt-1">Web • Mobile • Backend • AI</p>
-                  <p className="text-xs text-slate-400 mt-1">Machine Learning microservices & scalable apps</p>
+                  <span className="text-[11px] font-mono text-pink-400 uppercase tracking-wider">Domains</span>
+                  <h4 className="text-base font-bold text-slate-100 mt-0.5">Interests</h4>
+                  <p className="text-xs font-semibold text-slate-300 mt-1">Web • Mobile • Networks • AI</p>
+                  <p className="text-xs text-slate-400 mt-1">Network resilience & scalable modern applications</p>
                 </div>
               </div>
             </div>
