@@ -45,6 +45,13 @@ export const portfolioData = {
 
   aboutCards: [
     {
+      id: "role",
+      title: "Current Role",
+      subtitle: "Level 2 Support Engineer",
+      icon: "Briefcase",
+      description: "Level 2 Support Engineer at WebSurfer Nepal Communication System (2026 – Present • Dhumbarahi Height, Kathmandu)."
+    },
+    {
       id: "edu",
       title: "Education",
       subtitle: "Computer Science & Engineering",

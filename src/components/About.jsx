@@ -88,7 +88,7 @@ export default function About() {
                     </span>
                   </div>
                   <h4 className="text-base font-bold text-slate-100 mt-0.5">Level 2 Support Engineer</h4>
-                  <p className="text-xs font-semibold text-slate-300 mt-1">WebSurfer Nepal Communication System</p>
+                  <p className="text-xs font-semibold text-slate-300 mt-1">WebSurfer Nepal Communication System (2026 – Present)</p>
                   <div className="flex items-center space-x-1 text-xs text-slate-400 mt-1">
                     <MapPin size={12} className="text-rose-400" />
                     <span>Dhumbarahi Height, Kathmandu, Nepal</span>
