@@ -290,7 +290,7 @@ export const portfolioData = {
       location: "Dhumbarahi Height, Kathmandu, Nepal",
       locationMapUrl: "https://maps.google.com/?q=Websurfer+Nepal+Head+Office+Dhumbarahi+Height+Kathmandu",
       type: "Full-Time",
-      period: "2025 – Present",
+      period: "2026 – Present",
       isCurrent: true,
       description:
         "Providing Level 2 network support and infrastructure troubleshooting at WebSurfer Nepal, ensuring high availability, rapid incident resolution, and reliable broadband connectivity for enterprise and residential clients.",

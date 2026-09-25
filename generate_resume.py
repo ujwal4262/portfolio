@@ -138,7 +138,7 @@ def create_resume(output_filename):
     story.append(Paragraph("WORK EXPERIENCE", section_heading))
     exp_head = [
         Paragraph("<b>Level 2 Support Engineer (L2 Technical Support)</b><br/>WebSurfer Nepal Communication System Pvt. Ltd. &bull; Kathmandu, Nepal", bold_body),
-        Paragraph("<font color='#475569'><b>2025 &ndash; Present</b></font>", ParagraphStyle('R_exp', parent=body_style, alignment=2, fontSize=8.5))
+        Paragraph("<font color='#475569'><b>2026 &ndash; Present</b></font>", ParagraphStyle('R_exp', parent=body_style, alignment=2, fontSize=8.5))
     ]
     t_exp = Table([exp_head], colWidths=[420, 120])
     t_exp.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('LEFTPADDING', (0,0), (-1,-1), 0), ('RIGHTPADDING', (0,0), (-1,-1), 0)]))
